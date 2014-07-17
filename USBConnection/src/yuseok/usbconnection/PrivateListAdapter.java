@@ -1,10 +1,19 @@
 package yuseok.usbconnection;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 public class PrivateListAdapter extends BaseAdapter {
+	private Context context = null;
+	
+	public PrivateListAdapter(Context context) {
+		super();
+		this.context = context;
+		
+		
+	}
 
 	@Override
 	public int getCount() {
@@ -26,7 +35,8 @@ public class PrivateListAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		// TODO Auto-generated method stub
+		
+		
 		return null;
 	}
 
