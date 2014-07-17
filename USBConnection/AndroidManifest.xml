@@ -23,6 +23,10 @@
         <activity android:name="yuseok.usbconnection.USBList"
             android:theme="@style/noAnimTheme" >
         </activity>
+        
+        <activity android:name="yuseok.usbconnection.CanvasTest"
+            android:theme="@style/noAnimTheme" >
+        </activity>
     </application>
 
 </manifest>

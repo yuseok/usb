@@ -19,6 +19,14 @@
         android:id="@+id/connectUSB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CONNECT USB LIST" />
+        android:text="CONNECT USB" />
+    
+    
+    <Button
+        
+        android:id="@+id/canvasTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canvas TEST" />
 
 </LinearLayout>

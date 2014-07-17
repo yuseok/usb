@@ -9,6 +9,7 @@ import android.content.Context;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -23,7 +24,15 @@ public class USBList extends ListActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		showUSBDrivers();
+		try {
+
+			showUSBDrivers();
+
+		} catch (Exception e) {
+
+			finish();
+			Log.e("yuseok", "error occur in USB Port");
+		}
 
 		setListAdapter(new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, list));
@@ -70,9 +79,9 @@ public class USBList extends ListActivity {
 		}
 
 	}
-	
-	private class TestAdapter extends BaseAdapter{
-		
+
+	protected class TestAdapter extends BaseAdapter {
+
 		@Override
 		public int getCount() {
 			// TODO Auto-generated method stub
@@ -96,7 +105,7 @@ public class USBList extends ListActivity {
 			// TODO Auto-generated method stub
 			return null;
 		}
-		
+
 	}
 
 }

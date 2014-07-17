@@ -13,6 +13,7 @@ public class Main extends Activity {
 
 	Button mUSBList;
 	Button mUSBConnect;
+	Button mCanvasTest;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,15 +22,15 @@ public class Main extends Activity {
 
 		mUSBList = (Button) findViewById(R.id.showUSBList);
 		mUSBConnect = (Button) findViewById(R.id.connectUSB);
+		mCanvasTest = (Button) findViewById(R.id.canvasTest);
 
 		mUSBList.setOnClickListener(ocl);
 		mUSBConnect.setOnClickListener(ocl);
+		mCanvasTest.setOnClickListener(ocl);
 
 		super.onCreate(savedInstanceState);
 
 	}
-
-	
 
 	OnClickListener ocl = new OnClickListener() {
 
@@ -43,6 +44,8 @@ public class Main extends Activity {
 				Toast.makeText(Main.this, "connect usb device",
 						Toast.LENGTH_SHORT).show();
 				break;
+			case R.id.canvasTest:
+				startActivity(new Intent(Main.this, CanvasTest.class));
 
 			}
 
