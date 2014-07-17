@@ -20,7 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="yuseok.usbconnection.USBList" >
+        <activity android:name="yuseok.usbconnection.USBList"
+            android:theme="@style/noAnimTheme" >
         </activity>
     </application>
 

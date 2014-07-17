@@ -10,7 +10,12 @@
         android:layout_height="wrap_content"
         android:text="SHOW USB LIST" />
 
+    
+    
+    
+    
     <Button
+        
         android:id="@+id/connectUSB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
